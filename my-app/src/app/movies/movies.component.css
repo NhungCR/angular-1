@@ -1,0 +1,28 @@
+.movies{
+    background-color: #3399ff;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    width: 16em;
+}
+.movies .movieListItem{
+    font-size: 0.875em;
+    background-color: #cce5ff;
+    padding: 0.3em;
+    margin: 0.2em;
+    text-align: left;
+}
+.favorite-movies{
+    display: flex;
+}
+.selected{
+    background-color: seagreen !important;
+    color: #fff;
+}
+a{
+    color: #000;
+}
+.movies button{
+    background-color: #fff;
+    border: none;
+    float: right;
+}

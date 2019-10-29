@@ -1,0 +1,24 @@
+.col-1-4{
+    display: inline-block;
+    padding: 10px 0px;
+    width: 25%;
+}
+[class*='col-']:last-of-type{
+    padding-right: 0;
+}
+.movie-box{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    max-height: 120px;
+    max-width: 130px;
+    background-color: seagreen;
+    border-radius: 9999px;
+    margin: 0 auto;
+}
+.movie-box:hover{
+    background-color: teal;
+}
+a{
+    color: #fff;
+}

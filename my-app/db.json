@@ -1,0 +1,14 @@
+{
+  "movie": [
+    {
+      "id": 3,
+      "name": "Back to the future",
+      "releaseYear": 1996
+    },
+    {
+      "name": "nhung",
+      "releaseYear": "1998",
+      "id": 6
+    }
+  ]
+}

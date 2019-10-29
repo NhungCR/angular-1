@@ -1,0 +1,38 @@
+<div class="movies-detail">
+    <!-- <h1>Movie's details:</h1>
+    <div><span>id: {{movie.id}}</span></div>
+    <div><span>name: {{movie.name | uppercase}}</span></div>
+    <div><span>release year: {{movie.releaseYear}}</span></div>
+    <h2>Edit movie's infor:</h2>
+    <div>
+        <label>data-binding one-way
+            <input [ngModel]="movie.name" placeholder="Enter movie's name">
+        </label>
+    </div>
+    <div>
+        <label>data-binding two-way
+            <input [(ngModel)]="movie.releaseYear" placeholder="Enter movie's releaseYear">
+        </label>
+    </div> -->
+    <h2>My favorite movies</h2>
+    <div>
+        <label>New movie's name
+            <input #movieName placeholder="name">
+        </label>
+        <label>New movie's release year
+            <input #releaseYear placeholder="release year">
+        </label>
+        <button (click)="add(movieName.value, releaseYear.value); movieName.value=''; releaseYear.value=''">Add</button>
+    </div>
+    <div class="favorite-movies">
+        <ol class="movies">
+            <li class="movieListItem" *ngFor="let eachMovie of movies">
+                <a routerLink="/detail/{{eachMovie.id}}" >{{eachMovie.name}} - {{eachMovie.releaseYear}}</a>  
+                <button title="Delete movie" (click)="delete(eachMovie.id)">X</button>       
+            </li>
+        </ol>
+        <!-- <app-movie-detail [movie]="selectdMovie"></app-movie-detail> -->
+    </div>
+</div>
+<app-messages></app-messages>
+
